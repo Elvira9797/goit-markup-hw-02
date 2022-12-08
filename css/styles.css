@@ -20,24 +20,35 @@ body {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* Button */
 
 .button {
   color: var(--primary-text-color);
-
   cursor: pointer;
   font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0.04em;
 }
 
-.button.primary,
-.button.secondary:hover,
-.button.secondary:focus {
+.button.primary {
   color: var(--color-white);
   background-color: var(--primary-brand);
+  line-height: 1.19;
 }
 
 .button.secondary {
@@ -45,8 +56,10 @@ body {
   background-color: var(--light-cloud);
 }
 
-.line-height {
-  line-height: 1.19;
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--color-white);
+  background-color: var(--primary-brand);
 }
 
 /* Header */
@@ -56,6 +69,7 @@ body {
 
   font-family: "Raleway", sans-serif;
   font-size: 18px;
+  font-weight: 800;
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -95,8 +109,12 @@ body {
 
 /* Main */
 
-.hero .hero-title {
-  /* color: var(--color-white); */
+.hero.background {
+  background-color: var(--navy-blue);
+}
+
+.hero-title {
+  color: var(--color-white);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -105,7 +123,7 @@ body {
 
 /* Section */
 
-.section .section-title {
+.section-title {
   color: var(--navy-blue);
 
   font-weight: 700;
@@ -121,14 +139,16 @@ body {
   background-color: var(--light-cloud);
 }
 
-.benefits-list .title,
-.team-list .title,
-.portfolio-list .title {
+.list-title {
   color: var(--navy-blue);
 
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
+}
+
+.team-item {
+  background-color: var(--color-white);
 }
 
 /* Footer */
@@ -143,8 +163,13 @@ body {
   text-decoration: none;
 }
 
-.footer .text {
+.footer-text {
   color: var(--accent-cornflover);
 }
 
 /* Portfolio */
+
+.portfolio-link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
