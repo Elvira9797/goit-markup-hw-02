@@ -12,6 +12,8 @@ body {
   background-color: var(--color-white);
 
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -133,18 +135,18 @@ body {
   text-transform: capitalize;
 }
 
-/* Benefits and Our team */
-
-.section.background {
-  background-color: var(--light-cloud);
-}
-
 .list-title {
   color: var(--navy-blue);
 
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
+}
+
+/* Our team */
+
+.team-background {
+  background-color: var(--light-cloud);
 }
 
 .team-item {
